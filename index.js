@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+require("dotenv").config();
 require("@tensorflow/tfjs");
 
 const client = new Discord.Client();
@@ -31,4 +32,4 @@ client.on("message", async (msg) => {
     });
 });
 
-client.login("process.env.TOKEN");
+client.login(process.env.TOKEN);
