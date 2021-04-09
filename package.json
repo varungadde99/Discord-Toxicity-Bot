@@ -1,0 +1,21 @@
+{
+  "name": "toxicityzero",
+  "version": "1.0.0",
+  "description": "Helping reduce toxicity level on discord servers to zero!",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dist": "mkdir -p dist && cp -R node_modules index.js dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tejasmorkar",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/toxicity": "^1.2.2",
+    "@tensorflow/tfjs": "^3.3.0",
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
